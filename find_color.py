@@ -13,9 +13,9 @@ def main() :
 
     cv2.namedWindow('image')
     cv2.setMouseCallback('image', find_xy)
-    #image= cv2.resize(img,(550,800))
+    image= cv2.resize(img,(550,800))
     while(1):
-        cv2.imshow('image',img)
+        cv2.imshow('image',image)
         k = cv2.waitKey(5) & 0xFF
         if k == 27:
             break
